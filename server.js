@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // When we get to doing the frontend, we'll put it in a folder called
 // 'public' and we'll let express serve up the static files for us.
-app.use(express.static(path.join(__dirname, "..", "public")));
+app.use(express.static(path.join(__dirname, ".", "/public")));
 
 app.use('/api', expressJwt({secret: config.secret}));
 app.use('/getsessions', require('./routes/sessionRoutes'));

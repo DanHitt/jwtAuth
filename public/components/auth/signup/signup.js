@@ -1,4 +1,4 @@
-var app = angular.module("GameFinderApp");
+var app = angular.module("GF");
 
 app.controller("SignupController", ["$scope", "$location", "UserService", function ($scope, $location, UserService) {
     $scope.passwordMessage = "";

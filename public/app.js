@@ -1,12 +1,12 @@
-var app = angular.module("TodoApp", ["ngRoute","AuthModule"]);
+var app = angular.module("GF", ["ngRoute","AuthModule"]);
 
 app.config(function ($routeProvider) {
     $routeProvider
         .when("/", {
             templateUrl: "components/home/home.html"
         })
-        .when("/todos", {
-            templateUrl: "components/todos/todos.html",
-            controller: "TodoController"
+        .when("/session", {
+            templateUrl: "components/session/session.html",
+            controller: "SessionController"
         })
 });
