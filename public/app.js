@@ -1,4 +1,4 @@
-var app = angular.module("TodoApp", ["ngRoute"]);
+var app = angular.module("TodoApp", ["ngRoute","AuthModule"]);
 
 app.config(function ($routeProvider) {
     $routeProvider
